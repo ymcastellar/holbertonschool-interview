@@ -1,17 +1,9 @@
-# 0x18. Merge Sort
+# 0x17. Find the Loop
 
-# 0. Merge sort
-Write a function that sorts an array of integers in ascending order using the Merge Sort algorithm:
+# 0. Find the loop
+Write a function that finds the loop in a linked list.
 
-Prototype: void merge_sort(int *array, size_t size);
-You must implement the top-down merge sort algorithm
-When you divide an array into two sub-arrays, the size of the left array should always be <= the size of the right array. i.e. {1, 2, 3, 4, 5} -> {1, 2}, {3, 4, 5}
-Sort the left array before the right array
-You are allowed to use printf
-You are allowed to use malloc and free only once (only one call)
-Output: see example
-In the file 0-O, write the Big O notations of the time complexity of the Merge Sort algorithm, with 1 notation per line:
-
-in the best case
-in the average case
-in the worst case
+Prototype: listint_t *find_listint_loop(listint_t *head);
+Returns: The address of the node where the loop starts, or NULL if there is no loop
+You are not allowed to use malloc, free or arrays
+You can only declare a maximum of two variables in your function
